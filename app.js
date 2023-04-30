@@ -1,7 +1,7 @@
 const form = document.getElementById("chat-form");
 const input = document.getElementById("chat-input");
 const messages = document.getElementById("chat-messages");
-const apiKey = "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";
+const apiKey = "INSERT_API_KEY";
 
 const preText =
   "Generate a book recommendation based on the given question.";
