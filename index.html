@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="homepage.css" />
+  </head>
+  <body>
+    <header>
+        <h1>BookMatch</h1>
+        <p>Get personalized book recommendations based on your interests</p>
+      </header>
+      <main>
+          <section id="about-bookmatch" class="flex-container">
+              <div class="flex-item">
+                <h2>About</h2>
+                <p>Reading is one of life's greatest pleasures. It can take us on adventures to new worlds, help us understand ourselves and others, and broaden our perspectives. At BookMatch, we believe that everyone should have access to the joys of reading. That's why we've created a chatbot that can help you find your next great read!</p>
+                <h2>BookMatch</h2>
+                <p>Do you ever feel frustrated trying to find the right book? You know the feeling - you browse through countless titles, but nothing seems to fit. At BookMatch, we get it. That's why we've created a chatbot that takes the guesswork out of finding your next read. Just tell us your genre interests, and we'll recommend books we think you'll love. Give it a try and see what you've been missing!</p>
+
+                <img src="https://images.unsplash.com/photo-1615791287388-6f1bd87ace4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fG9wZW4lMjBib29rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="image" style="height: 350px; display: block; margin: auto; text-align: center;">
+
+                </div>
+              </div>
+              <div class="flex-item">
+                <div id="chat-window">
+                    <div class="main-title">Try BookMatch today!</div>
+                    <div id="chat-messages"></div>
+                    <form id="chat-form">
+                      <input
+                        type="text"
+                        id="chat-input"
+                        autocomplete="off"
+                        placeholder="Type your message here"
+                        required
+                      />
+                      <button type="submit">Submit</button>
+                    </form>
+                </div>
+      </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.3/axios.min.js"></script>
+    <script src="app.js"></script>
+  </body>

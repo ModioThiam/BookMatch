@@ -1,6 +1,6 @@
 import os
 import openai
-openai.api_key = os.getenv("OPENAI_API_KEY")
+
 
 while True:
   question = input("\033[34mWhat is your question?\n\033[0m")
@@ -10,8 +10,9 @@ while True:
 
   completion = openai.ChatCompletion.create(
     model="gpt-3.5-turbo",
+    # prompt = "Generate Book Recommendations based on user input",
     messages=[
-      {"role": "system", "content": "You are a               helpful assistant. Answer the given                  question."},
+      {"role": "system", "content": "Generate a book recommendation based on the given question."},
         {"role": "user", "content": question}
       ]
     )
